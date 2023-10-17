@@ -187,7 +187,7 @@ class VxRailAuthAutomator:
 
     def get_ssl_thumbprint(self, fqdn):
         cmd = "openssl s_client -connect {}:443 < /dev/null 2>/dev/null | openssl x509 " \
-              " ".format(fqdn)
+              "-fingerprint -sha256 -noout -in /dev/stdin".format(fqdn)
         sub_popen = subprocess.Popen(cmd,
                                      shell=True,
                                      stdout=subprocess.PIPE,
