@@ -1,0 +1,122 @@
+{
+  "global": {
+    "cluster_type": "",
+    "cluster_management_netmask": "",
+    "cluster_management_gateway": "",
+    "cluster_vsan_netmask": "",
+    "cluster_vmotion_netmask": "",
+    "ntp_servers": [
+      ""
+    ],
+    "is_internal_dns": false,
+    "dns_servers": [
+      ""
+    ],
+    "syslog_servers": [],
+    "ip_version": "",
+    "top_level_domain": "",
+    "ha_isolation_addresses": []
+  },
+  "version": "",
+  "hosts": [
+    {
+      "hostname": "",
+      "accounts": {
+        "root": {
+          "username": "",
+          "password": ""
+        },
+        "management": {
+          "username": "",
+          "password": ""
+        }
+      },
+      "network": [
+        {
+          "type": "",
+          "ip": ""
+        }
+      ],
+      "host_psnt": ""
+    }
+  ],
+  "vcenter": {
+    "customer_supplied_vc_name": "",
+    "datacenter_name": "",
+    "cluster_name": "",
+    "auto_accept_vc_cert": true,
+    "customer_supplied": true,
+    "accounts": {
+      "administrator": {
+        "username": "",
+        "password": ""
+      },
+      "management": {
+        "username": "",
+        "password": ""
+      }
+    }
+  },
+  "network": {
+    "nic_profile": "",
+    "management_portgroup_binding_type": "",
+    "systemvm_portgroup_binding_type": "",
+    "vds": [
+      {
+        "portgroups": [
+          {
+            "type": "",
+            "vlan_id": 0,
+            "vmk_mtu": 0,
+            "load_balance_policy": "",
+            "failover_order": {
+              "active": [
+                ""
+              ],
+              "standby": [
+                ""
+              ]
+            }
+          }
+        ],
+        "mtu": 0,
+        "nic_mappings": [
+          {
+            "uplinks": [
+              {
+                "name": "",
+                "physical_nic": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "vxrail_manager": {
+    "name": "",
+    "ip": "",
+    "accounts": {
+      "root": {
+        "username": "",
+        "password": ""
+      },
+      "service": {
+        "username": "",
+        "password": ""
+      },
+      "support": {
+        "password": "",
+        "username": ""
+      }
+    }
+  },
+  "storage": {
+    "primary_storage_type": "",
+    "vsan_hci_mesh_params": {
+      "server_cluster_name": "",
+      "primary_storage_name": "",
+      "storage_policy_profile_name": ""
+    }
+  }
+}
